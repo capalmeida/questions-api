@@ -16,6 +16,7 @@ namespace Questions.API.Configurations
         public static void RegisterServices(IServiceCollection services)
         {
             services.AddScoped<IQuestionService, QuestionService>();
+            services.AddScoped<IShareService, ShareService>();
         }
     }
 }
